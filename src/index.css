@@ -37,3 +37,35 @@ a:hover {
 .medium {
   font-size: 25px;
 }
+.white {
+  color: white;
+  background-color: white; 
+}
+.orange {
+  color: orange;
+  background-color: orange; 
+}
+.green {
+  color: green;
+  background-color: green; 
+}
+.blue {
+  color: blue;
+  background-color: blue; 
+}
+.red {
+  color: red;
+  background-color: red; 
+}
+.pink {
+  color: pink;
+  background-color: pink; 
+}
+.yellow {
+  color: yellow;
+  background-color: yellow; 
+}
+.black {
+  color: black;
+  background-color: black;
+}
