@@ -1,12 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Home from './Home';
+import Usestate from './Usestate';
+import Bmi from './Bmi';
+import UseTheFect from './UseTheFect';
+import EnkelReducer from './Enkelreducer';
+import AdvanceReducer from './Advancereducer';
+import Paint from './Paint';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const Index = () => {
+  
+  return (
+    <Router>
+      <Route exact path="/" render={() => <Home/>} />
+      <Route path="/usestate" render={() => <Usestate/>} />
+      <Route path="/bmi" render={() => <Bmi/>} />
+      <Route path="/usethefect" render={() => <UseTheFect/>} />
+      <Route path="/enkelreducer" render={() => <EnkelReducer/>} />
+      <Route path="/advancereducer" render={() => <AdvanceReducer/>} />
+      <Route path="/paint" render={() => <Paint/>} />
+    </Router>
+  )
+}
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+
+ReactDOM.render(<Index />, document.getElementById('root')); 
